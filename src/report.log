@@ -10691,3 +10691,5 @@
  0 1 1 0 0 1 0 1 0 0 1 1 0 1 1 1 0 1 0 0 0 1 1 1 1 1 0 1 0 0 1 0 0 0 0 0 0
  0 0 0 0 1 0 0 0 0 1 1 0 0 1 0 0 0 0 1 0 1 0 1 1 1 0 1 1 1 1 1 0 0 0 0 0 1
  0 0 0 1 0 1 0 0 1 1]
+2024-03-14 22:45:44,624 - matplotlib.font_manager - INFO - Failed to extract font properties from /usr/share/fonts/truetype/noto/NotoColorEmoji.ttf: In FT2Font: Could not set the fontsize (error code 0x17)
+2024-03-14 22:45:44,751 - matplotlib.font_manager - INFO - generated new fontManager

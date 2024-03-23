@@ -75,17 +75,17 @@ class HHSolverPSO(HHSolver):
     def fitness(self,sample):
         return obj_func_pso(sample = sample,data = self.data,sample_size = self.sample_size, verbose = False)
     
-    def get_best_alloc(self, time_limit):
+    def get_best_alloc(self,init_pop, time_limit, *args):
         # params
         dimensions_num = self.data.shape[0] #Rows' number
-        options = {'c1': 1, 'c2': 1, 'w': 1, 'k':1, 'p':2}
-        iter_num = 1000000
-        particles_num = 50
+        options = {'c1': args[1], 'c2': args[2], 'w': args[3], 'k':1, 'p':2}
+        iter_num = 100000000000
+        particles_num = args[0]
         init_pop_list = []
 
         #convert index list to binary numpy array
-        for i in range(50):
-            init_pop_list.append(index_to_binary(self.init_pop[i],dimensions_num))
+        for i in range(particles_num):
+            init_pop_list.append(index_to_binary(init_pop[i],dimensions_num))
         
         init_pop = np.array(init_pop_list)
 
@@ -94,10 +94,7 @@ class HHSolverPSO(HHSolver):
                                            init_pos=init_pop, 
                                            options=options)
         
-        cost, pos,time = optimizer1.optimize(objective_func = self.fitness, verbose = False, iters = iter_num, time_limit = time_limit)
-        # print(f"time_limit:{time_limit}")
-        # print(f"time:{time}")
-        
+        cost, pos, time = optimizer1.optimize(objective_func = self.fitness, verbose = False, iters = iter_num, time_limit = time_limit)
         index_solution = np.where(pos == 1)[0]
         return index_solution
     # TODO: get_best_alloc_GU
