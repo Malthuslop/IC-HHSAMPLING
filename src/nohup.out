@@ -15,3 +15,27 @@
 [I 12:58:43.460 NotebookApp] Shutting down 1 kernel
 [I 12:58:43.460 NotebookApp] Kernel shutdown: c162cbaf-fa1f-4290-90df-e9244b8ad33d
 [I 12:58:44.475 NotebookApp] Shutting down 0 terminals
+/usr/lib/python3/dist-packages/traitlets/traitlets.py:3047: FutureWarning: --nbserver_extensions={"ipyparallel.nbextension":true} for dict-traits is deprecated in traitlets 5.0. You can pass --nbserver_extensions <key=value> ... multiple times to add items to a dict.
+  warn(
+[C 20:12:03.796 NotebookApp] Bad config encountered during initialization: The 'nbserver_extensions' trait of a NotebookApp instance expected a dict, not the list ['{"ipyparallel.nbextension":true}'].
+/usr/lib/python3/dist-packages/traitlets/traitlets.py:3047: FutureWarning: --nbserver_extensions={"ipyparallel.nbextension":true} for dict-traits is deprecated in traitlets 5.0. You can pass --nbserver_extensions <key=value> ... multiple times to add items to a dict.
+  warn(
+[C 20:17:19.154 NotebookApp] Bad config encountered during initialization: The 'nbserver_extensions' trait of a NotebookApp instance expected a dict, not the list ['{"ipyparallel.nbextension":true}'].
+binary_with_time_control.py
+hhsampling_params.py
+hhsampling.py
+hhsolver.py
+main.py
+nohup.out
+parametersAnalysis.ipynb
+params.py
+PSO_dataframe001.csv
+PSO_dataframe.csv
+__pycache__
+report.log
+teste001.ipynb
+teste002.ipynb
+threads.py
+Untitled1.ipynb
+Untitled.ipynb
+utils.py
